@@ -1,0 +1,105 @@
+@import '../../mixin.scss';
+
+.founder_wrapper {
+	width: 92%;
+	margin: 0 auto;
+	overflow: hidden;
+
+	.founder_person {
+		margin-top: rem(34);
+
+		img {
+			width: 100%;
+			display: block;
+		}
+
+		.founder_person_con {
+			width: 97.7%;
+			background: #e7f2ff;
+			margin-left: 2.3%;
+			padding-bottom: rem(30);
+			border-bottom-right-radius: rem(20);
+			border-bottom-left-radius: rem(20);
+
+			p {
+				width: 100%;
+				color: #333333;
+				font-size: rem(30);
+				line-height: rem(44);
+				height: auto;
+				word-wrap: break-word;
+				word-break: break-all;
+				overflow: hidden;
+				padding: 0 2%;
+				box-sizing: border-box;
+			}
+		}
+	}
+
+	.programme {
+		.programme_title {
+			font-size: rem(34);
+			color: #226ec8;
+			text-align: center;
+			margin-top: rem(70);
+		}
+
+		.programme_title_pic {
+			img {
+				width: 100%;
+			}
+		}
+
+		.programme_con {
+			margin-top: rem(20);
+
+			.programme_con_title {
+				font-size: rem(28);
+				line-height: rem(36);
+				color: #333333;
+
+				.spot1::before {
+					content: "●";
+					color: #BAC4D5;
+					font-size: 0.2rem;
+					height: 0.2rem;
+					vertical-align: top;
+					padding-right: 0.1rem;
+				}
+
+			}
+
+			.programme_con_time {
+				font-size: rem(18);
+				height: rem(48);
+				line-height: rem(48);
+				color: #a1a1a1;
+				margin-top: rem(15);
+				border-bottom: 1px solid #e2e2e2;
+			}
+
+		}
+
+		.programme_getmore {
+			color: #9cb5e0;
+			font-size: rem(22);
+			float: right;
+			margin-top: rem(30);
+
+		}
+	}
+}
+
+#cbrid {
+	display: none;
+}
+
+ul {
+	list-style: none !important;
+}
+
+.list-paddingleft-2 li p:before {
+	content: "●";
+	color: #000000;
+	font-size: 0.2rem;
+}

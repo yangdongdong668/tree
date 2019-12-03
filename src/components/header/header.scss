@@ -1,0 +1,57 @@
+@import '../../mixin.scss';
+
+.wrapper {
+	height: 100%;
+	position: relative;
+
+	>div {
+		display: inline-block;
+		height: 100%;
+		vertical-align: top;
+	}
+
+	//  logo 样式
+	.logoWrapper {
+
+		.logoImg {
+			height: rem(76);
+			padding: rem(12);
+			vertical-align: text-bottom;
+		}
+	}
+
+	.titleWrapper {
+		padding-top: rem(20);
+		margin-left: rem(14);
+
+		.b_title {
+			font-size: rem(36);
+			color: #fff;
+			// letter-spacing:4px;
+		}
+
+		.v_title {
+
+			margin-top: rem(6);
+			font-size: rem(20);
+			color: #fff;
+		}
+	}
+
+	.iconWrapper {
+		position: absolute;
+		right: 0;
+
+		.icon_list {
+			width: rem(60);
+			padding: rem(20);
+		}
+
+		// .open,
+		// .close {
+		//     padding: rem(20);
+		// }
+
+	}
+
+}

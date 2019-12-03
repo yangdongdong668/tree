@@ -1,0 +1,29 @@
+@import '../../mixin.scss';
+
+.videoTitle {
+	text-align: center;
+	font-size: rem(30);
+	color: #333;
+	margin-top: rem(40);
+}
+
+.videoImgListWrapper {
+	margin-top: rem(30);
+	width: 100%;
+	overflow: hidden;
+
+	.videoImgListScrollWrapper {
+		.itemWrapper {
+			display: inline-block;
+			overflow: hidden;
+			width: rem(618);
+			border-radius: rem(20);
+			height: rem(380);
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}

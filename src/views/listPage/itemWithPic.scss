@@ -1,0 +1,9 @@
+@import '../../mixin.scss';
+
+.pswp__counter {
+	font-size: rem(55);
+}
+
+.pswp--zoom-allowed .pswp__img {
+	object-fit: cover;
+}

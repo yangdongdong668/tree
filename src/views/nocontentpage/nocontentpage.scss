@@ -1,0 +1,31 @@
+@import '../../mixin.scss';
+
+.noContentPage {
+	height: rem(1000);
+	display: box;
+	display: -webkit-box;
+	box-pack: center;
+	-webkit-box-pack: center;
+	box-align: center;
+	-webkit-box-align: center;
+
+	.imgWrapper {
+		text-align: center;
+
+		img {
+			width: 50%
+		}
+	}
+
+	.tipWrapper {
+		margin-top: rem(40);
+
+		.tipMessage {
+			font-size: rem(28);
+			color: #93afde;
+			text-align: center;
+			line-height: rem(40);
+		}
+	}
+
+}

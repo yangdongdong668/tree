@@ -1,0 +1,1 @@
+var getschoolid = 75;

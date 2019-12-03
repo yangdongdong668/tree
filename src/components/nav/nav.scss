@@ -1,0 +1,70 @@
+@import '../../mixin.scss';
+
+.stopDocumentScroll {
+	position: fixed;
+	width: 100%;
+}
+
+.wrapper2 {
+	position: fixed;
+	top: rem(100);
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 9999;
+
+	.listWrapper {
+		width: rem(468);
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		overflow-y: auto;
+		overflow-x: hidden;
+		border-top: 1px solid #3D7ECA;
+
+		ul {
+			background: #226EC8;
+			transition: 0.5s;
+			-webkit-transition: 0.5s;
+			position: relative;
+			padding: 0;
+			margin: 0;
+
+			li {
+				height: rem(100);
+				color: #bfd0eb;
+				font-size: rem(30);
+				line-height: rem(100);
+				// margin-left: rem(20);
+				border-bottom: 1px solid #3D7ECA;
+				letter-spacing: 2px;
+
+				a {
+					color: inherit;
+					display: inline-block;
+					height: 100%;
+					line-height: rem(100);
+					width: 100%;
+					padding-left: rem(72);
+
+					&.focus {
+						color: #fff;
+						background: #3379cc;
+					}
+				}
+			}
+		}
+
+		ul.show {
+			transform: translate3d(0, 0, 0);
+			-webkit-transform: translate3d(0, 0, 0);
+		}
+
+		ul.hide {
+			transform: translate3d(100%, 0, 0);
+			-webkit-transform: translate3d(100%, 0, 0);
+		}
+	}
+}

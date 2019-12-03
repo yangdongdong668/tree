@@ -1,0 +1,22 @@
+
+.videoList{
+    .videoImg{
+        width:94% !important;
+        margin-left: 3%;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        .indexImg{
+            width:100%;
+        }
+        .indexBtn{
+            position: absolute;
+            left:43%;
+            top:40%;
+            width:37px;
+        }
+    }
+    .slick-dots-bottom{
+        display:none !important;
+    }
+}

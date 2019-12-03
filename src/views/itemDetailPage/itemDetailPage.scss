@@ -1,0 +1,22 @@
+@import '../../mixin.scss';
+
+.pageArticleWrapper {
+	padding: 0 10px 20px 10px;
+
+	.pageArticle {
+		.articleTitle {
+			color: #333333;
+			font-size: rem(36);
+			line-height: rem(48);
+			margin-top: rem(40);
+		}
+
+		.articleTime {
+			color: #b4b4b4;
+			font-size: rem(26);
+			margin-top: rem(30);
+			padding-bottom: rem(26);
+			border-bottom: 1px solid #D0D0D0;
+		}
+	}
+}

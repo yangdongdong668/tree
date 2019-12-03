@@ -1,0 +1,335 @@
+@import '../../mixin.scss';
+
+.mainpage_con {
+	 background: #f6f6f6;
+}
+
+.recruit_students {
+	height: rem(240);
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	border-top: 1px solid #d4e4f6;
+	border-bottom: 1px solid #d4e4f6;
+	color: #333333;
+	font-size: rem(28);
+
+	.recruit_item {
+		width: 33.33%;
+		text-align: center;
+		box-sizing: border-box;
+
+		img {
+			height: rem(110);
+			margin-top: rem(42);
+			margin-bottom: rem(26);
+		}
+	}
+
+	.recruit_item:nth-of-type(2) {
+		border-left: 1px solid #d4e4f6;
+		border-right: 1px solid #d4e4f6;
+	}
+
+}
+.notice_top{
+	background: rgb(231,242,255);
+	font-size: rem(28);
+	height:rem(80);
+	line-height:rem(80);
+	width:94%;
+	border-radius:rem(10);
+	margin:rem(20) auto 0;
+	position: relative;
+	.notice_top_l{
+		float:left;
+		margin-left:rem(20);
+		
+		.notice_top_l_img{
+			display:block;
+			width:rem(40);
+			height:rem(40);
+			margin-top:rem(20);
+		}
+	}
+	.notice_top_r{
+		float:right;
+		margin:0 rem(20)
+	}
+	.video-react{
+		position: absolute;
+		top:rem(80);
+	}
+}
+.video-react .video-react-big-play-button{
+	background:url("../../assets/imgs/icon_play1@2x.png") center no-repeat;
+	background-size:cover;
+	height:rem(100);
+	width:rem(100);
+	border:none;
+	top:36%;
+	left:41%;
+}
+.video-react.video-react-fluid{
+	width:94%;
+	margin:0 auto;
+	border-radius: rem(20);
+	overflow: hidden;
+}
+.sendWord{
+	.notice_top{
+		background:none !important;
+	}
+}
+
+.college_details {
+	color: #333333;
+	font-size: rem(28);
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+	.college_details_item {
+		width: 45%;
+		text-align: center;
+		height: rem(274);
+		background: #ffffff;
+		border-radius: rem(10);
+		overflow: hidden;
+		margin: rem(26) rem(10) 0;
+
+		img {
+			height: rem(150);
+			margin: rem(8) 0;
+		}
+
+		.en_dd {
+			color: #b0b0b0;
+			font-size: rem(14);
+			line-height: rem(30);
+		}
+
+		&:nth-child(-n+2) {
+			height: rem(268);
+			margin-top: rem(20)
+		}
+	}
+
+
+
+	.college_details_t,
+	.college_details_b {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+
+	}
+
+	.college_details_t {
+		margin-top: rem(20)
+	}
+
+	.college_details_b {
+		margin-top: rem(26)
+	}
+}
+
+.newsListWrapper {
+	width:94%;
+	margin:rem(20) auto;
+	border-radius: rem(20);
+	background:#fff;
+	overflow: hidden;
+	.trends_top{
+		background: rgb(231,242,255);
+		font-size: rem(28);
+		height:rem(80);
+		line-height:rem(80);
+		position: relative;
+		.notice_top_l{
+			float:left;
+			img{
+				display:inline-block;
+				width:rem(40);
+				height:rem(40);
+				margin:rem(20);
+			}
+		}
+	}
+	.itemTitle {
+		text-align: center;
+		color: #226EC8;
+		margin-top: rem(40);
+		font-size: rem(36);
+	}
+
+	.gapWrapper {
+		font-size: 0;
+		text-align: center;
+		margin-top: rem(12);
+
+		img {
+			width: 94%;
+		}
+	}
+
+	.listWrapper {
+		margin-top: rem(20);
+
+		.singleItemWrapper {
+			width: 92%;
+			margin: 0 auto;
+			// height: rem(200);
+			display: box;
+			display: -webkit-box;
+			border-bottom: 1px solid #E2E2E2;
+			margin-bottom: 10px;
+
+			>div {
+				height: 100%;
+				width: 50%;
+				margin-bottom: 3px;
+			}
+
+			.imgWrapper {
+				img {
+					display: block;
+					width: rem(320);
+					height: rem(180);
+					border-radius: rem(10);
+				}
+			}
+
+			.textWrapper {
+				margin-left:rem(10);
+				.newsTitle {
+					color: #333333;
+					line-height: rem(36);
+					font-size: rem(30);
+					width: 94%;
+
+				}
+
+				.newsTime {
+					color: #999999;
+					font-size: rem(24);
+					margin: rem(42) 0 0 0;
+					width: 94%;
+
+				}
+			}
+		}
+	}
+
+	.getMore {
+		height: rem(74);
+		text-align: center;
+		padding-right: 3%;
+
+		span {
+			color: #999999;
+			font-size: rem(24);
+			line-height: rem(54);
+			vertical-align: top;
+		}
+	}
+}
+
+.aboutUsWrapper {
+	position: relative;
+	height: rem(422);
+	font-size: 0;
+
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	.maskTitle {
+		position: absolute;
+		width: 100%;
+		height: rem(150);
+		bottom: 0;
+		background-color: rgba(34, 110, 200, 0.5);
+		color: #ffffff;
+		font-size: rem(40);
+		text-align: center;
+		line-height: rem(150);
+	}
+}
+
+.admissionsWrapper {
+	height: rem(422);
+	text-align: center;
+
+	.admissionsLogoWrapper {
+		margin-top: rem(114);
+
+		img {
+			width: rem(160)
+		}
+	}
+
+	.maskTitle {
+		color: #226EC8;
+		font-size: rem(40);
+		margin-top: rem(42)
+	}
+
+}
+
+#tongzhi_top{
+	border-bottom-right-radius:0;
+	border-bottom-left-radius:0;
+}
+.tongzhiItemWrapper{
+	height:rem(140);
+	font-size:rem(30);
+	background:#ffffff;
+	width:94%;
+	margin:0 auto;
+	.textWrapper{
+		padding-left:rem(20);
+	}
+	.newsTitle:before {
+		content: '';
+		display: inline-block;
+		width: 4px;
+		height: 4px;
+		background-color: #666;
+		vertical-align: middle;
+		margin-right: 7px;
+		border-radius: 4px;
+	}
+	.newsTitle{
+		line-height:rem(80);
+	}
+	.newsTime *{
+		font-size:rem(24);
+		line-height:rem(36);
+		height:rem(40);
+		color:#b2b3b2;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.newsTime{
+		img{
+			margin-right:rem(10);
+		}
+		span{
+			margin-right:10%;
+		}
+	}
+}
+.line{
+	border-bottom:1px solid #eee;
+}
+.bRadius{
+	border-bottom-right-radius:rem(10);
+	border-bottom-left-radius:rem(10);
+}

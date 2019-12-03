@@ -1,0 +1,97 @@
+.transition-loader {
+   
+  //  height: 100%;
+  //  width: 100%;
+  }
+  
+
+  .transition-loader-inner label {
+   
+    display: inline-block;
+    background: #93AFDE;
+    width: 6px;
+    height: 6px;
+    margin-left:4px;
+    border-radius: 50%; 
+    opacity: 0;
+    display: inline-block;
+  }
+  .transition-loader-inner{
+    margin: 0.4rem auto 0.58667rem auto;
+    width: 4.8rem;
+    text-align: center;
+    font-size: 0.34667rem;
+    color: #93afde;
+    // background-color: #F1F7FF;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 25px;
+  }
+ 
+  
+  .transition-loader-inner label:nth-child(1) {
+    -webkit-animation: loader 2s 600ms infinite ease-in-out;
+    animation: loader 2s 600ms infinite ease-in-out;
+  }
+  
+  .transition-loader-inner label:nth-child(2) {
+    -webkit-animation: loader 2s 500ms infinite ease-in-out;
+    animation: loader 2s 500ms infinite ease-in-out;
+  }
+  
+  .transition-loader-inner label:nth-child(3) {
+    -webkit-animation: loader 2s 400ms infinite ease-in-out;
+    animation: loader 2s 400ms infinite ease-in-out;
+  }
+  
+  .transition-loader-inner label:nth-child(4) {
+    -webkit-animation: loader 2s 300ms infinite ease-in-out;
+    animation: loader 2s 300ms infinite ease-in-out;
+  }
+  
+  .transition-loader-inner label:nth-child(5) {
+    -webkit-animation: loader 2s 200ms infinite ease-in-out;
+    animation: loader 2s 200ms infinite ease-in-out;
+  }
+  
+  .transition-loader-inner label:nth-child(6) {
+    -webkit-animation: loader 2s 100ms infinite ease-in-out;
+    animation: loader 2s 100ms infinite ease-in-out;
+  }
+  
+  @keyframes loader {
+    0% {
+      opacity: 0;
+      transform: translateX(-60px) scale(1);
+    }
+    33% {
+      opacity: 1;
+      transform: translateX(0px) scale(2);
+    }
+    66% {
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(60px) scale(2);
+    }
+  }
+  @-webkit-keyframes loader {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-60px);
+    }
+    33% {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+    }
+    66% {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateX(60px);
+    }
+  }

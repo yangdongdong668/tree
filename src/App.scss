@@ -1,0 +1,56 @@
+@import './mixin.scss';
+
+#root {
+	position: relative;
+	top: rem(100);
+}
+
+.app {
+	// height: 100%;
+
+	.header-wrapper {
+		height: rem(100);
+		width: 100%;
+		background: #fff;
+		//   position: absolute;
+		position: fixed;
+		z-index: 1000;
+		top: 0;
+	}
+
+	.content-wrapper {
+		position: absolute;
+		top: rem(100);
+		width: 100%;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.pageContentWrapper {
+	.pageArticleWrapper {
+		ul {
+			position: relative;
+			//  left: -20px;
+			padding-left: 20px;
+		}
+
+		ul,
+		li {
+			list-style: initial;
+			margin: auto;
+			padding: auto;
+		}
+
+		table {
+			border-collapse: collapse;
+
+			td {
+				border: 1px solid grey;
+			}
+		}
+
+		word-break: break-all;
+	}
+
+}

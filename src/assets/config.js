@@ -1,0 +1,1 @@
+const getschoolid=12;

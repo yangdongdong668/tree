@@ -1,0 +1,53 @@
+@import '../../mixin.scss';
+
+.aboutUsWrapper_page {
+	padding: rem(42) rem(30) 0 rem(30);
+
+	>div:nth-of-type(1) {
+		.title {
+			margin-top: 0;
+		}
+	}
+
+	.title {
+		color: #202020;
+		font-size: rem(36);
+		line-height: rem(48);
+		margin-top: rem(30);
+	}
+
+	.img {
+		text-align: center;
+		margin-top: rem(26);
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.info {
+		margin-top: rem(14);
+		padding-bottom: rem(20);
+		font-size: rem(24);
+		color: #9f9f9f;
+		border-bottom: 1px solid #E6E6E6;
+		line-height: rem(34);
+	}
+
+	.getMore {
+		font-size: 0;
+		text-align: center;
+
+		div {
+			margin: rem(30) auto rem(44) auto;
+			width: rem(360);
+			text-align: center;
+			font-size: rem(26);
+			color: #93afde;
+			background-color: #F1F7FF;
+			height: 44px;
+			line-height: 44px;
+			border-radius: 25px;
+		}
+	}
+}
